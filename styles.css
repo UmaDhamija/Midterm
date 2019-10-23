@@ -1,0 +1,188 @@
+*{
+  background-color: black;
+}
+
+.GridContainer{
+  display: grid;
+  grid-template-columns: 32% 2% 32% 2% 32%;
+  grid-template-rows: 70% 70%;
+  grid-column-gap: 1vmin;
+  grid-row-gap: 1vmin;
+  height: 100%;
+}
+
+.FirstRow{
+  grid-column-end: span 5;
+  background-image: url("palm.gif");
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Londrina Shadow';
+  font-weight: lighter;
+  font-size: 70px;
+  color: white;
+  background-color: transparent;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Londrina Shadow';
+  font-weight: lighter;
+  font-size: 30px;
+  color: white;
+  background-color: transparent;
+}
+
+.menus{
+  grid-row-start: 2;
+  grid-column-end: span 5;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  background-color: transparent;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 999999;
+}
+
+.projects-menu{
+  grid-column-start: 1;
+  background-color: transparent;
+  position: fixed;
+  left: 10%;
+}
+
+.photography-menu{
+  grid-column-start: 3;
+  background-color: transparent;
+  position: fixed;
+}
+
+.resume-menu{
+  grid-column-start: 5;
+  background-color: transparent;
+  position: fixed;
+  right: 10%;
+}
+
+.menu-text{
+  font-family: 'Londrina Shadow';
+  font-weight: lighter;
+  font-size: 50px;
+  color: white;
+  z-index: 3
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+a:hover{
+  letter-spacing: 5px;
+  color: mediumpurple;
+}
+
+video{
+  video.volume = 0.1
+}
+
+.Projects{
+  grid-column-start: 1;
+  grid-row-start: 2;
+  margin-bottom: 30%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.iframe-container{
+  padding-top: 10vh;
+  grid-column-start: 1;
+  max-width: 100%;
+}
+
+.gif-column-one{
+  background-image: url("arows.gif");
+  grid-column: 2;
+  grid-row: 2;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.Photography{
+  grid-column-start: 3;
+  grid-row-start: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.GalleryGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(40, auto);
+  grid-column-gap: 10px;
+  grid-rows-gap: 10px;
+  height: 100vh;
+  grid-gap: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.GalleryGrid img{
+  filter: blur(2px);
+  width: 100%;
+  height: auto;
+  transition: all(0.5s);
+  position: relative;
+}
+
+.GalleryGrid img:hover{
+  filter: blur(0px);
+  transform: scale(1.7);
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  z-index:9999;
+}
+
+.gif-column-two{
+  background-image: url("arows.gif");
+  grid-column-start: 4;
+  grid-row-start: 2;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.contact{
+  grid-column-start: 5;
+  grid-row-start: 2;
+  display: flex;
+  justify-direction: center;
+  font-family: 'Londrina Shadow';
+  font-weight: lighter;
+  font-size: 50px;
+  color: white;
+  background-color: transparent;
+}
+
+.headshot{
+  float: right;
+  border-radius: 50%;
+  z-index: 999;
+  padding: 2vw;
+  height: 30vh;
+}

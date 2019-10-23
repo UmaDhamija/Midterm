@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Uma Dhamija</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Montez|Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- grid container: with 5 columns and 2 rows-->
+    <div class="GridContainer">
+
+    <!-- First row will span an image to all 5 columns and have menu items in the top [z-index: 3]-->
+      <div class="FirstRow">
+        <h1>Hi, I'm Uma Dhamija.</h1>
+        <p>This is my portfolio.</p>
+      </div>
+
+      <div class="menus">
+        <div class="menu-text projects-menu">Projects</div>
+        <div class="menu-text photography-menu">Photography</div>
+        <div class="menu-text resume-menu"><a href="Resumé design.pdf" target="_blank">Résumé</a></div>
+      </div>
+
+      <!-- First container: projects -- takes up column to the left-->
+      <div class="Projects">
+        <div class="iframe-container">
+          <iframe width="100%" height=auto src="https://player.vimeo.com/video/368164808" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="iframe-container">
+          <video width="100%" height=auto controls src="Uma Saiyaan.mp4" poster="Saiyaan"></video>
+        </div>
+        <div class="iframe-container">
+          <video width="100%" height=auto controls src="KATHAK.mp4" poster="kathak"></video>
+        </div>
+      </div>
+
+      <!-- gif container -->
+      <div class="gif-column-one"></div>
+
+      <!-- Second container: Photography -- takes up third column-->
+      <div class="Photography">
+        <!-- A grid within this column; zig-zags photography down the column -->
+        <div class="GalleryGrid">
+          <img src="babyboy.png" alt="Baby Boy"></img>
+          <img src="sunrise.png" alt="Sunrise"></img>
+          <img src="babygirl.png" alt="Baby Girl"></img>
+          <img src="carpet.png" alt="Carpet"></img>
+          <img src="cloud.png" alt="Cloud"></img>
+          <img src="dakari.png" alt="Portrait"></img>
+          <img src="friendships.png" alt="Friendship"></img>
+          <img src="lights.png" alt="Lights"></img>
+          <img src="oldman.jpg" alt="Portrait"  style="transform: rotate(90deg) translate(50px,0) scale(1.4); position: relative;"></img>
+          <img src="yinyang.jpg" alt="Puppies"></img>
+          <img src="turtle.jpg" alt="Turtle" style="transform: rotate(90deg) translate(50px,0) scale(1.4); position: relative;"></img>
+          <img src="tower.jpg" alt="Old Tower" style="transform: rotate(90deg) translate(50px,0) scale(1.4); position: relative;"></img>
+          <img src="tintedwindows.jpg" alt="Tinted Windows" style="transform: rotate(90deg) translate(50px,0) scale(1.4); position: relative;"></img>
+          <img src="steps.jpg" alt="Steps"></img>
+          <img src="skateboard.jpg" alt="Skateboard" style="transform: rotate(90deg) translate(50px,0) scale(1.4); position: relative;"></img>
+          <img src="sculpture.jpg" alt="Sculpture"></img>
+          <img src="saif.jpg" alt="Portrait"></img>
+          <img src="plates2.jpg" alt="Colored Plates" style="transform: rotate(90deg) translate(50px,0) scale(1.4); position: relative;"></img>
+          <img src="plane.jpg" alt="Plane"></img>
+          <img src="mountain.jpg" alt="Mountain"></img>
+          <img src="monkey2.jpg" alt="Monkeys"></img>
+          <img src="mirch.jpg" alt="Green"></img>
+          <img src="marriage.png" alt="Marriage"></img>
+          <img src="cat2.jpg" alt="Cat" style="transform: rotate(90deg) translate(50px,0) scale(1.4); position: relative;"></img>
+          <img src="cat.jpg" alt="Another Cat" style="transform: rotate(90deg) translate(50px,0) scale(1.4); position: relative;"></img>
+          <img src="building.jpg" alt="Building"></img>
+          <img src="shoes.jpg" alt="Shoes" style="transform: rotate(90deg) translate(50px,0) scale(1.8);"></img>
+          <img src="sky.jpg" alt="Sky"></img>
+          <img src="building2.jpg" alt="Building"></img>
+        </div>
+
+      </div>
+
+      <!-- gif container -->
+      <div class="gif-column-two"></div>
+
+      <!-- Third container: Resume and Contact -- includes headshot bubble that scrolls with the column -->
+      <div class="Resume">
+        <a href="contact.html" class="contact" target="_blank">Contact</a>
+        <div>
+          <img src="headshot.jpg" alt="headshot" class="headshot"></img>
+        </div>
+      </div>
+
+        <!-- Will be contact info for peopel to reach out AND a resume link that leads to pdf -->
+
+    </div>
+
+  </body>
+
+</html>
